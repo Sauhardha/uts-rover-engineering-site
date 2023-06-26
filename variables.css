@@ -1,0 +1,177 @@
+/* HIND */@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+/* Open Sans */@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* Mulish */ @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+/* Arimo */ @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Wix+Madefor+Display:wght@700;800&display=swap');
+/* Bruno Ace */ @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+/* ---------- Fonts ------------ */
+
+.styleFont {
+    font-family: 'Hind', sans-serif;
+    font-weight: 800;
+}
+
+.headFont {
+    font-family: 'Hind', sans-serif;
+    font-weight: 500;
+}
+
+.navFont {
+    font-family: 'Hind', sans-serif;
+    font-weight: 700;
+}
+
+.bodyFont {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    transition: 500ms ease;
+}
+
+.bannerFont {
+    font-family: 'Bruno Ace', cursive;
+
+}
+
+.linkFont{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 200;
+    transition: 300ms ease;
+}
+
+/* ---------- Colours ------------ */
+.c1 {
+    color: #171717;
+}
+
+.c2 {
+    color: #0F4C75;
+}
+
+.c3 {
+    color: #3282B8;
+}
+
+.c4 {
+    color: #EBE7E4;
+}
+/* ---------- Background Colours ------------ */
+.bg1 {
+    background-color: #171717;
+}
+
+.bg2 {
+    background-color: #0F4C75;
+}
+
+.bg3 {
+    background-color: #3282B8;
+}
+
+.bg4 {
+    background-color: #EBE7E4;
+}
+
+/* Custom styles */
+#joinLabel {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#joinLabel.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+
+.no-outline:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.bg-image {
+    background-image: url('./images/wavyBg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-wall {
+  background-color: #353535;
+}
+
+#navbar-toggle:checked + label .w-12 {
+    transform: rotate(-90deg);
+    border: 2px solid rgb(160, 241, 255);
+  }
+
+  #navbar-toggle:checked + label .w-12 path {
+    stroke: white;
+    color: white;
+  }
+
+  #navbar-toggle:checked ~ .bg-zinc-950 {
+    height: 100vh;
+    transition: 600ms ease;
+  }
+
+  #navbar-toggle:checked ~ .fixed .linkFont {
+    opacity: 0;
+    transition: opacity 300ms ease;
+    user-select: none;
+    cursor: auto;
+  }
+  
+
+
+  /* Animations */
+  
+  @keyframes flashing {     /* Flashing */
+    0%, 20% {
+      color: #3282B8;
+    }
+    25%, 95% {
+      color: #EBE7E4;
+    }
+    100% {
+      color: #3282B8;
+    }
+  }
+
+  .flashing-text {
+    animation: flashing 1.3s linear infinite;
+  }
+
+  .flashing-text:nth-child(2) {
+    animation-delay: 200ms;
+  }
+
+  .flashing-text:nth-child(3) {
+    animation-delay: 400ms;
+  }
+
+  .flashing-text:nth-child(4) {
+    animation-delay: 700ms;
+  }
+
+  .flashing-text:nth-child(5) {
+    animation-delay: 1000ms;
+  }
+
+  .flashing-text:nth-child(6) {
+    animation-delay: 1300ms;
+  }
+
+
+  @keyframes rotation {     /* Rotating */
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .animate-rotation {
+    animation: rotation 5s infinite linear;
+  }
+  
